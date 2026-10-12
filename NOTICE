@@ -1,0 +1,12 @@
+Birdie model files
+
+perch_v2_int8.tflite
+  Google Perch 2.0 bird vocalization classifier (Kaggle: google/bird-vocalization-classifier,
+  variant perch_v2_cpu), Copyright Google LLC, licensed under the Apache License, Version 2.0.
+  Modified: converted from the TensorFlow SavedModel to TensorFlow Lite with dynamic-range
+  int8 weight quantization. No retraining; outputs match the original model's top-1 on our
+  test windows.
+
+sound_labels.json
+  Bird classes of the model matched to GBIF taxonomy, common names from Wikidata (CC0) and
+  per-country record counts from GBIF.org occurrence data (CC0 and CC BY 4.0 records only).
